@@ -1,0 +1,88 @@
+
+.sidebar{
+  background-color: $dark-color;
+  width: 150px;
+  position: fixed;
+  display: block;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.sidebar-title{
+  display: inline;
+  padding: 15px 12px;
+  text-align: center;
+
+  .title{
+    font-family: $font-header;
+    font-size: 20px;
+  }
+}
+
+.sidebar-links{
+  cursor: pointer;
+
+  .sidebar-links-item{
+    padding: 10px 14px;
+
+    a{
+      padding-left: 7px;
+    }
+  }
+}
+
+.sidebar-links-item:hover{
+  background-color: $paragraph-color;
+  color: $light-grey;
+  border-left: 3px $orange-h-color solid;
+}
+
+.icon-notification{
+  position: relative;
+}
+
+.icon-notification::after{
+  content: "";
+  font-size: 150px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: 9px;
+  top: -5px;
+  background-color: $orange-color;
+  position: absolute;
+}
+
+.icon-quit{
+  border-right: 1px $paragraph-color solid;
+}
+
+.user{
+  color: $links-color;
+  padding-right: 0;
+}
+
+
+
+.sidebar-manager{
+border-top: 0.5px $paragraph-color solid;
+padding: 10px 20px;
+
+.manager-item{
+  position: relative;
+  img{
+    padding: 10px 0;
+    width: 20px;
+    height: 20px;
+
+  }
+
+  a{
+    position: absolute;
+    color: $links-color;
+    font-size: 10px;
+    left: 30px;
+    top: 14px;
+  }
+}
+}
