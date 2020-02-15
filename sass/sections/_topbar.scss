@@ -4,8 +4,8 @@
   width: 100%;
   background-color: #FFFFFF;
   text-align: right;
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
+  height: 53px;
 }
 
 .top{
@@ -26,4 +26,29 @@
   span{
     padding: 0 20px;
   }
+}
+
+.icon-notification{
+  position: relative;
+}
+
+.icon-notification::after{
+  content: "";
+  font-size: 150px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: 9px;
+  top: -5px;
+  background-color: $orange-color;
+  position: absolute;
+}
+
+.icon-quit{
+  border-right: 1px $paragraph-color solid;
+}
+
+.user{
+  color: $links-color;
+  padding-right: 0;
 }

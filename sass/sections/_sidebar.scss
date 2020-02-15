@@ -17,14 +17,21 @@
     font-family: $font-header;
     font-size: 20px;
   }
+
+  i{
+    padding-left: 30px;
+    font-size: 15px;
+  }
 }
 
 .sidebar-links{
   cursor: pointer;
+  list-style: none;
+  padding: 0;
 
   .sidebar-links-item{
     padding: 10px 14px;
-
+    text-decoration: none;
     a{
       padding-left: 7px;
     }
@@ -37,30 +44,7 @@
   border-left: 3px $orange-h-color solid;
 }
 
-.icon-notification{
-  position: relative;
-}
 
-.icon-notification::after{
-  content: "";
-  font-size: 150px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  left: 9px;
-  top: -5px;
-  background-color: $orange-color;
-  position: absolute;
-}
-
-.icon-quit{
-  border-right: 1px $paragraph-color solid;
-}
-
-.user{
-  color: $links-color;
-  padding-right: 0;
-}
 
 
 
@@ -74,6 +58,7 @@ padding: 10px 20px;
     padding: 10px 0;
     width: 20px;
     height: 20px;
+    background-color: $dark-color;
 
   }
 

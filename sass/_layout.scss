@@ -4,6 +4,32 @@ body{
 margin: 0;
 background-color: $main-color;
 font-family: $font-text;
-color: $light-grey;
+color: $paragraph-color;
 font-size: $paragraph-font-size;
 }
+
+.container{
+  background-color: #FFFFFF;
+  margin: 10px 10px 0 160px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15%;
+}
+
+
+/* Grid */
+
+
+  .col-6{
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-12{
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }

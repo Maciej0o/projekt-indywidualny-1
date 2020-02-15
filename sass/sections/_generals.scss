@@ -1,0 +1,137 @@
+
+.general{
+  padding: 60px 0 0 0;
+}
+
+.general-date{
+  justify-content: center;
+  display: flex;
+  padding: 25px;
+  border-bottom: 1px $light-grey solid;
+
+  .date-inputs{
+    display: flex;
+    border: 1px $light-grey solid;
+    padding: 5px;
+    margin: 0 10px;
+    justify-content: space-between;
+    min-width: 40%;
+    a{
+      border: none;
+      padding: 0 10px;
+
+    }
+
+    i{
+      padding-right: 5px;
+    }
+
+    .date2{
+      border-left: 1px $light-grey solid;
+    }
+  }
+}
+
+
+.general-items{
+  display: flex;
+  justify-content:  space-between;
+  border-bottom: 1px $light-grey solid;
+  width: 85%;
+  padding: 5px;
+
+
+  p{
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+/*Chart*/
+
+.general-row{
+  margin: 10px 0;
+}
+.title-chart{
+  padding: 20px 0;
+}
+
+.chart-legend{
+  display: flex;
+  justify-content: center;
+
+  a{
+    margin: 0 10px;
+    position: relative;
+  }
+
+  a:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    border-radius: 50%;
+
+  }
+  .signups:before{
+    background-color: blue;
+  }
+
+  .ftd:before{
+    background-color: $orange-color;
+  }
+}
+
+.chart{
+  padding-bottom: 30px;
+}
+
+.button-links{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+.wrapper-links{
+  margin: 20px 0;
+}
+
+ .wrapper-single-link{
+   display: flex;
+   border-bottom: 1px $light-grey solid;
+   padding: 10px;
+ }
+
+ .links-item{
+   display: flex;
+   justify-content: space-between;
+
+   .link{
+     color: $links-color;
+     cursor: pointer;
+   }
+
+   .icon-links{
+     color: $orange-color;
+   }
+
+   i{
+     padding: 0 5px;
+   }
+ }
+
+.link-icon{
+  display: none;
+}
+
+.wrapper-single-link:hover{
+
+  .link-icon{
+    display: flex;
+    cursor: pointer;
+  }
+
+}

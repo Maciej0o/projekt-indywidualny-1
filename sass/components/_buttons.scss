@@ -3,10 +3,10 @@
 .btn-orange, .btn-grey{
   text-align: center;
   color: $main-color;
-  padding: 8px 20px;
+  padding: 7px 20px 0 20px;
   width: 80px;
-  height: 40px;
-  font-size: $paragraph-font-size;
+  height: 30px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -38,4 +38,25 @@
 
 .btn-top:hover{
   background-color: $light-grey;
+}
+
+.btn-small{
+  background-color: $orange-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 4%;
+  position: relative;
+  color: #FFFFFF;
+
+  i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+
+.btn-small:hover{
+  background-color: $orange-h-color;
 }
