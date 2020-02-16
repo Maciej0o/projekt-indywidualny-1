@@ -1,5 +1,6 @@
 
 .topbar{
+  z-index: 2;
   position: fixed;
   width: 100%;
   background-color: #FFFFFF;
@@ -51,4 +52,10 @@
 .user{
   color: $links-color;
   padding-right: 0;
+}
+
+@media (max-width: 767px){
+  .top-item{
+    display: none;
+  }
 }

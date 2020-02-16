@@ -33,3 +33,10 @@ font-size: $paragraph-font-size;
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+
+  @media (max-width: 767px){
+    .container{
+       margin: 10px 10px 0 10px;
+     }
+  }

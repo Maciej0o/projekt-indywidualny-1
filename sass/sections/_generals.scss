@@ -1,6 +1,7 @@
 
 .general{
   padding: 60px 0 0 0;
+
 }
 
 .general-date{
@@ -87,6 +88,12 @@
 
 .chart{
   padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+  img{
+    width: 100%;
+  }
 }
 
 .button-links{

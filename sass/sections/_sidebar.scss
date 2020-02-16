@@ -6,6 +6,7 @@
   display: block;
   padding-top: 10px;
   height: 100%;
+  z-index: 3;
 }
 
 .sidebar-title{
@@ -21,6 +22,7 @@
   i{
     padding-left: 30px;
     font-size: 15px;
+    cursor: pointer;
   }
 }
 
@@ -32,6 +34,7 @@
   .sidebar-links-item{
     padding: 10px 14px;
     text-decoration: none;
+
     a{
       padding-left: 7px;
     }
@@ -52,22 +55,48 @@
 border-top: 0.5px $paragraph-color solid;
 padding: 10px 20px;
 
-.manager-item{
-  position: relative;
-  img{
-    padding: 10px 0;
-    width: 20px;
-    height: 20px;
-    background-color: $dark-color;
+  .manager-item{
+    position: relative;
+    img{
+      padding: 10px 0;
+      width: 20px;
+      height: 20px;
+      background-color: $dark-color;
 
-  }
+    }
 
-  a{
-    position: absolute;
-    color: $links-color;
-    font-size: 10px;
-    left: 30px;
-    top: 14px;
+    a{
+      position: absolute;
+      color: $links-color;
+      font-size: 10px;
+      left: 30px;
+      top: 14px;
+    }
   }
 }
+.sidebar-down{
+  border: none;
+  padding: 0;
+
+  span{
+    padding: 5px;
+  }
+}
+
+@media (min-width: 767px){
+  .sidebar-down{
+    border: none;
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .active-short{
+    height: 42px;
+
+    .sidebar-links, .sidebar-manager, .sidebar-down{
+      display: none;
+    }
+
+  }
 }
