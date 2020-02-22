@@ -1,0 +1,48 @@
+
+.button-links{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+.wrapper-links{
+  margin: 20px 0;
+}
+
+ .wrapper-single-link{
+   display: flex;
+   border-bottom: 1px $light-grey solid;
+   padding: 10px;
+ }
+
+ .links-item{
+   display: flex;
+   justify-content: space-between;
+
+   .link{
+     color: $links-color;
+     cursor: pointer;
+   }
+
+   .icon-links{
+     color: $orange-color;
+   }
+
+   i{
+     padding: 0 5px;
+   }
+ }
+
+.link-icon{
+  display: flex;
+  opacity: 0;
+}
+
+.wrapper-single-link:hover{
+  background-color: $light-grey;
+  .link-icon{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+}

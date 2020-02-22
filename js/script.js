@@ -6,8 +6,12 @@
   console.log(sidebarElement.classList.contains("active-short"));
 
 
+  if ( window.innerWidth > 767 && sidebarElement.classList.contains("active-short") != true){
+    sidebarElement.classList.add("active-short");
+  }
+
   function shortSidebar(){
-    if(sidebarElement.classList.contains("active-short") == true){
+    if(sidebarElement.classList.contains("active-short") == true && window.innerWidth < 767){
       sidebarElement.classList.remove("active-short");
       console.log(sidebarElement);
     }

@@ -1,7 +1,7 @@
 
 .sidebar{
-  background-color: $dark-color;
-  width: 150px;
+  background-color: black;
+  width: 188px;
   position: fixed;
   display: block;
   padding-top: 10px;
@@ -16,12 +16,12 @@
 
   .title{
     font-family: $font-header;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   i{
     padding-left: 30px;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
   }
 }
@@ -34,6 +34,9 @@
   .sidebar-links-item{
     padding: 10px 14px;
     text-decoration: none;
+    border-left: 3px black solid;
+    font-size: 14px;
+
 
     a{
       padding-left: 7px;
@@ -47,10 +50,6 @@
   border-left: 3px $orange-h-color solid;
 }
 
-
-
-
-
 .sidebar-manager{
 border-top: 0.5px $paragraph-color solid;
 padding: 10px 20px;
@@ -61,14 +60,14 @@ padding: 10px 20px;
       padding: 10px 0;
       width: 20px;
       height: 20px;
-      background-color: $dark-color;
+      background-color: black;
 
     }
 
     a{
       position: absolute;
       color: $links-color;
-      font-size: 10px;
+      font-size: 14px;
       left: 30px;
       top: 14px;
     }
@@ -94,7 +93,7 @@ padding: 10px 20px;
   .active-short{
     height: 42px;
 
-    .sidebar-links, .sidebar-manager, .sidebar-down{
+    .sidebar-links, .sidebar-manager, .sidebar-down, {
       display: none;
     }
 

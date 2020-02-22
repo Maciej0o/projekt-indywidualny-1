@@ -479,9 +479,14 @@ body {
   font-size: 12px;
 }
 
+main {
+  padding: 0;
+  margin: 0 10px 0 198px;
+}
+
 .container {
   background-color: #FFFFFF;
-  margin: 10px 10px 0 160px;
+  margin: 0 0 10px 0;
 }
 
 .row {
@@ -508,8 +513,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .container {
-    margin: 10px 10px 0 10px;
+  main {
+    margin: 0 10px 0 10px;
   }
 }
 
@@ -517,12 +522,12 @@ body {
 .btn-orange, .btn-grey {
   text-align: center;
   color: #F5F5F2;
-  padding: 7px 20px 0 20px;
+  padding: 15px 20px 15px 20px;
   width: 80px;
-  height: 30px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 .btn-orange {
@@ -549,6 +554,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #979797;
   cursor: pointer;
+  margin-left: -3px;
 }
 
 .btn-top:hover {
@@ -578,7 +584,7 @@ body {
 .title-section {
   border-bottom: 1px #E3E3E3 solid;
   padding: 0;
-  color: #E3E3E3;
+  color: #979797;
 }
 
 .title-section p {
@@ -647,8 +653,8 @@ body {
 }
 
 .sidebar {
-  background-color: #333333;
-  width: 150px;
+  background-color: black;
+  width: 188px;
   position: fixed;
   display: block;
   padding-top: 10px;
@@ -664,12 +670,12 @@ body {
 
 .sidebar-title .title {
   font-family: "Galada", cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .sidebar-title i {
   padding-left: 30px;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -682,6 +688,8 @@ body {
 .sidebar-links .sidebar-links-item {
   padding: 10px 14px;
   text-decoration: none;
+  border-left: 3px black solid;
+  font-size: 14px;
 }
 
 .sidebar-links .sidebar-links-item a {
@@ -707,13 +715,13 @@ body {
   padding: 10px 0;
   width: 20px;
   height: 20px;
-  background-color: #333333;
+  background-color: black;
 }
 
 .sidebar-manager .manager-item a {
   position: absolute;
   color: #56819F;
-  font-size: 10px;
+  font-size: 14px;
   left: 30px;
   top: 14px;
 }
@@ -744,7 +752,7 @@ body {
 }
 
 .general {
-  padding: 60px 0 0 0;
+  padding: 64px 0 0 0;
 }
 
 .general-date {
@@ -760,20 +768,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   border: 1px #E3E3E3 solid;
-  padding: 5px;
+  padding: 0;
   margin: 0 10px;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  min-width: 40%;
+  width: 230px;
 }
 
 .general-date .date-inputs a {
   border: none;
-  padding: 0 10px;
+  font-size: 12px;
+  padding: 8px 10px;
+  height: 12px;
 }
 
 .general-date .date-inputs i {
-  padding-right: 5px;
+  height: 12px;
+  padding: 8px 10px 8px 0;
 }
 
 .general-date .date-inputs .date2 {
@@ -887,12 +898,17 @@ body {
 }
 
 .link-icon {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+.wrapper-single-link:hover {
+  background-color: #E3E3E3;
 }
 
 .wrapper-single-link:hover .link-icon {
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
   cursor: pointer;
 }
 
