@@ -3,6 +3,7 @@
   <head>
     <title>Project</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Galada|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -115,29 +116,25 @@
               </div>
               <div class="general-items">
                 <a>FTD</a>
-                <p>124</p>
+                <p>445</p>
               </div>
             </div>
             <div class="col-6 general-right">
               <div class="general-items">
                 <a>Net deposit</a>
-                <p>124</p>
+                <p>564</p>
               </div>
               <div class="general-items">
                 <a>Turn over</a>
-                <p>124</p>
+                <p>432</p>
               </div>
             </div>
           </div>
           <div class="generals-chart-wrapper row">
             <h3 class="title-chart col-12">Earnings chart</h3>
-            <div class="chart-legend col-12">
-              <a class="btn-top signups">Signups</a>
-              <a class="btn-top ftd">FTD</a>
-              <a class="btn-top earned">Earned</a>
-            </div>
             <div class="chart col-12">
-              <img src="images/chart.jpg" alt="chart">
+
+              <canvas id="myChart" height='120'></canvas>
             </div>
           </div>
         </div>
@@ -251,10 +248,10 @@
               </div>
               <div class="col-12 wrapper-single-link">
                 <div class="name-links col-6">
-                  <a>Home Page</a>
+                  <a>Piece of Wine</a>
                 </div>
                 <div class="links-item col-6">
-                  <a class="link">http://www.homepage.com</a>
+                  <a class="link">http://www.pieceofwine.com</a>
                   <div class="link-icon">
                     <a><i class="icon-links"></i></a>
                     <a><i class="icon-trash"></i></a>
@@ -263,10 +260,10 @@
               </div>
               <div class="col-12 wrapper-single-link">
                 <div class="name-links col-6">
-                  <a>Home Page</a>
+                  <a>Twitter</a>
                 </div>
                 <div class="links-item col-6">
-                  <a class="link">http://www.homepage.com</a>
+                  <a class="link">http://www.twitter.com</a>
                   <div class="link-icon">
                     <a><i class="icon-links"></i></a>
                     <a><i class="icon-trash"></i></a>
@@ -281,6 +278,8 @@
         </div>
       </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 
   </body>

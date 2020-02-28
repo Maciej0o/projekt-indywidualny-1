@@ -1,6 +1,6 @@
 
 .sidebar{
-  background-color: black;
+  background-color: $dark-color;
   width: 188px;
   position: fixed;
   display: block;
@@ -34,7 +34,7 @@
   .sidebar-links-item{
     padding: 10px 14px;
     text-decoration: none;
-    border-left: 3px black solid;
+    border-left: 3px $dark-color solid;
     font-size: 14px;
 
 
@@ -45,7 +45,7 @@
 }
 
 .sidebar-links-item:hover{
-  background-color: $paragraph-color;
+  background-color: $dark-hover-color;
   color: $light-grey;
   border-left: 3px $orange-h-color solid;
 }
@@ -55,21 +55,22 @@ border-top: 0.5px $paragraph-color solid;
 padding: 10px 20px;
 
   .manager-item{
-    position: relative;
+    display: flex;
+    align-items: center;
     img{
       padding: 10px 0;
-      width: 20px;
-      height: 20px;
-      background-color: black;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
 
     }
 
     a{
-      position: absolute;
       color: $links-color;
       font-size: 14px;
       left: 30px;
       top: 14px;
+      margin-left: 10px;
     }
   }
 }
