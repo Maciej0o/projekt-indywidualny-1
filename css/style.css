@@ -828,6 +828,7 @@ main {
 }
 
 .chart-legend a {
+  font-size: 14px;
   margin: 0 10px;
   position: relative;
 }
@@ -844,11 +845,15 @@ main {
 }
 
 .chart-legend .signups:before {
-  background-color: blue;
+  background-color: #8DBEC8;
 }
 
 .chart-legend .ftd:before {
-  background-color: #F58220;
+  background-color: #F29E4E;
+}
+
+.chart-legend .earned:before {
+  background-color: #71B374;
 }
 
 .chart {

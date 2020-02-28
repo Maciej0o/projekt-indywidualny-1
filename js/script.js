@@ -69,7 +69,7 @@
         },
       },
       legend: {
-        display: true,
+        display: false,
         labels: {
           usePointStyle: true,
         },

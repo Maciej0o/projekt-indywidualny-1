@@ -66,6 +66,7 @@
   margin-bottom: 40px;
 
   a{
+    font-size: 14px;
     margin: 0 10px;
     position: relative;
   }
@@ -82,11 +83,14 @@
 
   }
   .signups:before{
-    background-color: blue;
+    background-color: #8DBEC8;
   }
 
   .ftd:before{
-    background-color: $orange-color;
+    background-color: #F29E4E;
+  }
+  .earned:before{
+    background-color: #71B374;
   }
 }
 
